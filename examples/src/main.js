@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import app from './app.vue'
-ue.config.productionTip = false
+import Cutter from 'main/index.js'
+Vue.config.productionTip = false
+Vue.use(Cutter)
 new Vue({
-	router,
-	store,
 	render: (h) => h(app),
 }).$mount('#app')

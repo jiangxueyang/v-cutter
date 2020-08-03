@@ -4,9 +4,8 @@
   "description": "a vue component for cuttint image",
   "main": "index.js",
   "scripts": {
-    "build:umd": "webpack --config bin/webpack.config.js ",
-    "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint"
+    "build:umd": "webpack --config bin/webpack.umd.js",
+    "dev:demo": "webpack-dev-server  --config bin/webpack.demo.js"
   },
   "repository": {
     "type": "git",
@@ -31,13 +30,11 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.6",
-    "@vue/cli-plugin-eslint": "^4.4.6",
-    "@vue/cli-service": "^4.4.6",
     "@vue/component-compiler-utils": "^2.6.0",
     "algoliasearch": "^3.24.5",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^7.1.5",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-istanbul": "^4.1.1",
@@ -56,9 +53,10 @@
     "css-loader": "^2.1.0",
     "es6-promise": "^4.0.5",
     "eslint": "4.18.2",
-    "eslint-loader": "^2.0.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-html": "^4.0.1",
     "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^1.1.11",
     "file-save": "^0.2.0",
     "gulp": "^4.0.0",
